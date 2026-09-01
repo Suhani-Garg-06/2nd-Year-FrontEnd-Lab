@@ -3,52 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIMETABLE</title>
-    <link rel="stylesheet" href="Timetable.css">
+    <title>Timetable</title>
+    <link href="Timetable.css" rel="stylesheet" >
 </head>
 <body>
-    <header>
-        Academic TimeTable 
-        FA-Section
-    </header>
-    <table border="1" style="border-collapse: collapse;">
+
+    <table>
+        <!-- Header Info Rows -->
+        <tr><th colspan="11" class="header-title">GLA UNIVERSITY, MATHURA</th></tr>
+        <tr><td colspan="11"><strong>Institute of Engineering & Technology</strong></td></tr>
+        <tr><td colspan="11"><strong>Computer Engineering & Applications</strong></td></tr>
         <tr>
-            <th>DAY/DATE</th>
-            <th>08:00-09:00</th>
-            <th>09:00-10:00</th>
-            <th>10:00-11:00</th>
-            <th>11:00-12:00</th>
-            <th>12:00-01:00</th>
-            <th>01:00-02:00</th>
-            <th>02:00-03:00</th>
-            <th>03:00-04:00</th>
-            <th>04:00-05:00</th>
-            <th>05:00-06:00</th>
+            <td colspan="3"><strong>Time Table:</strong> Odd Semester Programme</td>
+            <td colspan="4"><strong>Course:</strong> Bachelor of Technology</td>
+            <td colspan="4"><strong>Session:</strong> 2025-2026</td>
         </tr>
         <tr>
-            <th>Monday</th>
+            <td colspan="3"><strong>2FA (65) (FULL STACK DEVELOPMENT)</strong></td>
+            <td colspan="1"><strong>Semester:</strong> III</td>
+            <td colspan="4"><strong>Class Advisor:</strong> Ms. Meghana M / Dr. Medha Kirti</td>
+            <td colspan="3"><strong>w.e.f.</strong> 10/Aug/2026</td>
+        </tr>
+        
+        <!-- Schedule Heading Rows -->
+        <tr>
+            <th rowspan="2">Day/Time</th>
+            <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+        </tr>
+        <tr>
+            <th>08-09</th><th>09-10</th><th>10-11</th><th>11-12</th><th>12-01</th><th>01-02</th><th>02-03</th><th>03-04</th><th>04-05</th><th>05-06</th>
+        </tr>
+
+        <!-- Weekly Data Rows -->
+        <tr>
+            <td class="day">Monday</td>
+            <td></td><td></td>
+            <td>BMAS0108<br>ABVII-410</td>
             <td></td>
+            <td colspan="2" class="split">
+                <div class="sub-item">2FA1/BCSC1802/ABI-322</div>
+                <div class="sub-item">2FA2/BCSC1802/ABI-323</div>
+                <div class="sub-item">2FA3/BCSC1802/ABV-218A</div>
+            </td>
             <td></td>
-            <td>BMAS0108<br>ABI-109</abbr></td>
+            <td>BCSE0031<br>ABVII-410</td>
+            <td>BCSC0009<br>ABVII-410</td>
+            <td>BELH0020<br>ABVII-410</td>
+        </tr>
+        <tr>
+            <td class="day">Tuesday</td>
+            <td></td><td></td>
+            <td>BMAS0108<br>ABVII-410</td>
+            <td>BCSC1003<br>ABVII-410</td>
+            <td>BCSE0031<br>ABVII-410</td>
+            <td></td><td></td>
+            <td>BCSC0009<br>ABVII-410</td>
             <td></td>
-            <td colspan="2">2FA 1/BCSC1802/ABI-322<hr>2FA 2/BCSC1802/ABI-323<hr>2FA 3/BCSC1802/ABV-218A</abbr></td>
+            <td class="split">
+                <div class="sub-item">2FA1/BELH0020/ABVII-211</div>
+                <div class="sub-item">2FA2/BELH0020/ABVII-201</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="day">Wednesday</td>
+            <td></td><td></td>
+            <td class="green">BCSE0031<br>ABI-305</td>
+            <td class="green">BCSC1805<br>(AA,FA,CA)<br>ABI-305</td>
+            <td class="green">BCSC1805<br>(AA,FA,CA)<br>ABI-305</td>
             <td></td>
-            <td>BCSE0031<br>ABI-316</td>
-            <td>BCSC0009<br>ABI-316</td>
-            <td>BELH0020<br>ABI-316</td>
+            <td class="green">BCSC1006<br>(AA,FA,CA)<br>ABI-305</td>
+            <td class="green">BCSC1006<br>(AA,FA,CA)<br>ABI-305</td>
+            <td class="green">BCSC1006<br>(AA,FA,CA)<br>ABI-305</td>
+            <td>BCSC1003<br>ABVII-410</td>
         </tr>
         <tr>
-            <th>Tuesday</th>
+            <td class="day">Thursday</td>
+            <td></td><td></td>
+            <td class="green">BMAS0108<br>ABI-305</td>
+            <td class="green">BCSC1805<br>(AA,FA,CA)<br>ABI-305</td>
+            <td></td><td></td>
+            <td class="green">BCSC1805<br>(AA,FA,CA)<br>ABI-305</td>
+            <td class="green">BCSC1006<br>(AA,FA,CA)<br>ABI-305</td>
+            <td class="green">BCSC1006<br>(AA,FA,CA)<br>ABI-305</td>
+            <td class="green">BCSC0009<br>ABI-305</td>
         </tr>
         <tr>
-            <th>Wednesday</th>
+            <td class="day">Friday</td>
+            <td></td><td></td>
+            <td>BCSC1003<br>ABVII-410</td>
+            <td>BMAS0108<br>ABVII-410</td>
+            <td></td><td></td>
+            <td colspan="2" class="pink">BCSE0813<br>ABVII-410</td>
+            <td>BELH0020<br>ABVII-410</td>
+            <td class="split">
+                <div class="sub-item">2FA1/BELH0020/ABVII-410</div>
+                <div class="sub-item">2FA2/BELH0020/ABVII-403</div>
+            </td>
         </tr>
-        <tr>
-            <th>Thrusday</th>
-        </tr>
-        <tr>
-            <th>Friday</th>
-        </tr>
+        
     </table>
+
 </body>
 </html>
