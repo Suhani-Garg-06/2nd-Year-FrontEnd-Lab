@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 247, 250); 
+    color: rgb(44, 62, 80); 
+}
+
+header {
+    background-color: rgb(41, 128, 185);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: rgb(52, 73, 94);
+    color: rgb(189, 195, 199);
+    font-size: 0.9rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #FFFFFF; 
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #00000010; 
+}
+
+#about-section {
+    border-left: 5px solid #E67E22; 
+}
+
+.action-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.styled-list {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.styled-list li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.city-list {
+    list-style-type: square; 
+    color: #16A085; 
+}
+
+.movie-list {
+    list-style-type: upper-roman; 
+    color: #8E44AD; 
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #2980B9;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: #34495E;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-link:active {
+    transform: translateY(1px);
+}
+
