@@ -92,6 +92,7 @@
             margin-bottom: 10px;
         }
         .notes-content li {
+             font-size: 14px;
             margin-bottom: 4px;
         }
         .notes-content button {
@@ -124,11 +125,6 @@
             font-size: 20px;
             margin-top: 10px;
             height: 48px;
-        }
-        .productCart pre {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            margin-bottom: 8px;
         }
         .productCart button {
             display: block;
@@ -169,7 +165,6 @@
             background-color: #ffffff; 
             color: rgb(91, 91, 248); 
             border-radius: 5px;
-            padding: 5px;
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
         }
         /*MediaQuery*/
@@ -213,6 +208,7 @@
                 width: 250px;
                 height: calc(100vh - 70px);
                 transition: 0.3s;
+                z-index: 15;
             }
             #menu {
                 display: none;
@@ -223,7 +219,8 @@
             .notes-content h2 {
                 font-size: 19px;
             }
-            .notes-content p,li {
+            .notes-content p,
+            .notes-content li {
                 font-size: 14px;
             }
             .content {
@@ -262,7 +259,20 @@
             .productCart h4 {
                 font-size: 18px;
             }
-            .productCart pre {
+            .productCart p {
+                font-size: 14px;
+            }
+             #menu {
+                display: none;
+            }
+            #menu:checked ~ .sidebar {
+                left: 0;
+            }
+            .notes-content h2 {
+                font-size: 19px;
+            }
+            .notes-content p,
+            .notes-content li {
                 font-size: 14px;
             }
         }
@@ -276,6 +286,7 @@
         <h1 class="header">Welcome</h1>
         <p class="header"> <strong>Our Website Provide You the content for Learning</strong> </p>
     </header>
+    <input type="checkbox" id="menu">
     <!--Static-->
     <div class="sidebar">
         <a href="#home" class="active">Home</a>
@@ -310,19 +321,19 @@
         <div class="productCart">
             <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFbqnNfTJmRpNs6pFW0sMeUMMvgbRhDZTk1d0tfoBFwQ&s=10"></div>
             <h4>Java Programming</h4>
-            <pre>Price: 25,000</pre>
+            <p>Price: 25,000</p>
             <button type="button" >Add to Cart</button>
         </div>
         <div class="productCart">
             <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvhsozQLgZbhNexUNHAaoYs-opZSmX4A56ISjIE6JzZQ&s=10"></div>
             <h4>C++ Programming</h4>
-            <pre>Price: 25,000</pre>
+            <p>Price: 25,000</p>
             <button type="button" >Add to Cart</button>
         </div>
         <div class="productCart">
             <div class="img"> <img src="https://c8.alamy.com/comp/2D9N00K/python-inscription-against-laptop-and-code-background-learn-python-programming-language-computer-courses-training-2D9N00K.jpg" alt="PYHTON"></div>
             <h4>Python Programming</h4>
-            <pre>Price: 25,000</pre>
+            <p>Price: 25,000</p>
             <button type="button" >Add to Cart</button>
         </div>
     </div>
