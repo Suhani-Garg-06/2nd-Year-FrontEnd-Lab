@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Eligiblity Checker</title>
+     <link href="https://jsdelivr.net" rel="stylesheet">
+</head>
+<body>
+    <h1>Age Eligiblity Checker</h1>
+    <table class="table-bordered table-hover">
+        <tr>
+            <th>Khushi</th>
+            <th>Suhani</th>
+            <th>Nandini</th>
+            <th>Shikha</th>
+        </tr>
+        <tr>
+            <td>suhasini</td>
+            <td>Saloni</td>
+            <td>VAnshikha</td>
+            <td>Palak</td>
+        </tr>
+    </table>
+    <script>
+        let age=window.prompt("Enter Your Current Age in Years");
+        age=Number(age);
+        if(age>0&&Number.isFinite(age)&&Number.isInteger(age)){
+            let result=age>=18 ? "You are eligible to have a driving license"
+            :"you are not eligible to have a driving license";
+            document.write(result);
+        }
+        else{
+            window.alert("Please Enter a Valid age");
+            document.write("Invalid age has been entered");
+        }
+    </script>
+</body>
+</html>
