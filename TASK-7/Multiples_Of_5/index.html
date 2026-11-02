@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiples_Of_5</title>
+</head>
+<body>
+    <script>
+        let n=5;
+        let sum=0;
+        do{
+            if(n%5==0){
+                document.write(n+", ");
+                sum+=n;
+            }
+            n+=5;
+        }while(n<=100);
+        document.write("<br>");
+        document.write(`The sum of sequence is ${sum}`);
+    </script>
+</body>
+</html>

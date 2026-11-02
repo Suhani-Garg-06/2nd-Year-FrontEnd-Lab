@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=5837462;
+        let org=n;
+    let sumEven=0;
+    let sumOdd=0;
+    while(n>0){
+        let rem=n%10;
+        if(rem%2!=0){
+            sumOdd+=rem;
+        }
+        else{
+            sumEven+=rem;
+        }
+        n=Math.round(n/10);
+    }
+    document.write(`Even digits sum of number ${org} is ${sumEven}<br>`);
+    document.write(`Odd digits sum of number ${org} is ${sumOdd}`);
+    </script>
+</body>
+</html>
