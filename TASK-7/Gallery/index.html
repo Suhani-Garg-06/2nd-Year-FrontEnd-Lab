@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 20px;
+            background-image: url("https://cdn.pixabay.com/photo/2018/10/01/09/21/pets-3715733_960_720.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .gallery {
+            max-width: 650px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #mainImage {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .thumbnails img {
+            width: 100px;
+            height: 70px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 3px solid transparent;
+            border-radius: 5px;
+        }
+
+        .thumbnails img:hover {
+            border-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery">
+        <h2>Pet Image Gallery</h2>
+
+        <img id="mainImage"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphE-hLpmqhA-C0-Pf-3vTqhmkOESkehdSZvjEORGojA&s"
+             alt="Main landscape image">
+
+        <div class="thumbnails">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphE-hLpmqhA-C0-Pf-3vTqhmkOESkehdSZvjEORGojA&s"
+                alt="Cat"
+                data-large="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphE-hLpmqhA-C0-Pf-3vTqhmkOESkehdSZvjEORGojA&s">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-O08muZ2zbGdPaNG0-xnY-n6QyRnYnRNZedJ9GLIu3H-fMCIiymz6lsMF&s=10"
+                alt="Dog"
+                data-large="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-O08muZ2zbGdPaNG0-xnY-n6QyRnYnRNZedJ9GLIu3H-fMCIiymz6lsMF&s=10"">
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNUuyp7jzPDN72dm-4IXnrYYjsypZXzdQqjhdaOpJd3UJwFA5tjiXcpac&s=10"
+                alt="DOg"
+                data-large="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNUuyp7jzPDN72dm-4IXnrYYjsypZXzdQqjhdaOpJd3UJwFA5tjiXcpac&s=10">
+
+            <img
+                src="https://i.pinimg.com/236x/90/4c/04/904c04e5b857daac963405651438962a.jpg"
+                alt="Cat"
+                data-large="https://i.pinimg.com/236x/90/4c/04/904c04e5b857daac963405651438962a.jpg">
+        </div>
+    </div>
+
+    <script>
+        const mainImage = document.getElementById("mainImage");
+
+        const thumbnails =
+            document.querySelectorAll(".thumbnails img");
+
+        thumbnails.forEach(function (thumbnail) {
+
+            thumbnail.addEventListener("click", function () {
+
+                mainImage.src = thumbnail.dataset.large;
+                mainImage.alt = thumbnail.alt;
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>
